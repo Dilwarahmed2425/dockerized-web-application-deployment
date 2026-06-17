@@ -5,6 +5,10 @@ app.get("/", (req, res) => {
   res.send("Hello from Backend API 🚀");
 });
 
+app.get("/api", (req, res) => {
+  res.send("Hello from Backend API 🚀");
+});
+
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "UP",
